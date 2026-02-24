@@ -74,27 +74,50 @@ GO
 --------------------------------
 -- Primary Keys:
 --------------------------------
-ALTER TABLE gold.olist_orders ADD CONSTRAINT pk_olist_orders PRIMARY KEY(order_id);
-ALTER TABLE gold.olist_order_items ADD CONSTRAINT pk_olist_order_items PRIMARY KEY(order_item_id);
-ALTER TABLE gold.olist_products ADD CONSTRAINT pk_olist_products PRIMARY KEY(product_id);
-ALTER TABLE gold.olist_dim_customers ADD CONSTRAINT pk_olist_customers PRIMARY KEY(customer_id);
-ALTER TABLE gold.olist_dim_sellers ADD CONSTRAINT pk_olist_sellers PRIMARY KEY(seller_id);
+ALTER TABLE gold.olist_orders
+    ADD CONSTRAINT pk_olist_orders 
+    PRIMARY KEY(order_id);
+
+ALTER TABLE gold.olist_order_items
+    ADD CONSTRAINT pk_olist_order_items
+    PRIMARY KEY(order_item_id);
+
+ALTER TABLE gold.olist_products
+    ADD CONSTRAINT pk_olist_products
+    PRIMARY KEY(product_id);
+
+ALTER TABLE gold.olist_dim_customers
+    ADD CONSTRAINT pk_olist_customers
+    PRIMARY KEY(customer_id);
+
+ALTER TABLE gold.olist_dim_sellers
+    ADD CONSTRAINT pk_olist_sellers
+    PRIMARY KEY(seller_id);
 
 --------------------------------
 -- Indexes
 --------------------------------
-CREATE INDEX idx_order_items_order_id ON gold.olist_order_items(order_id);
-CREATE INDEX idx_order_items_product_id ON gold.olist_order_items(product_id);
+CREATE INDEX idx_order_items_order_id
+    ON gold.olist_order_items(order_id);
+
+CREATE INDEX idx_order_items_product_id
+    ON gold.olist_order_items(product_id);
 
 
 --------------------------------
 -- Foreign Keys:
 --------------------------------
-ALTER TABLE gold.olist_order_items ADD CONSTRAINT fk_items_orders
-FOREIGN KEY(order_id) REFERENCES gold.olist_orders(order_id);
+ALTER TABLE gold.olist_order_items
+    ADD CONSTRAINT fk_items_orders
+    FOREIGN KEY(order_id)
+    REFERENCES gold.olist_orders(order_id);
 
-ALTER TABLE gold.olist_order_items ADD CONSTRAINT fk_items_products
-FOREIGN KEY(product_id) REFERENCES gold.olist_products(product_id);
+ALTER TABLE gold.olist_order_items
+    ADD CONSTRAINT fk_items_products
+    FOREIGN KEY(product_id)
+    REFERENCES gold.olist_products(product_id);
 
-ALTER TABLE gold.olist_order_items ADD CONSTRAINT fk_items_sellers
-FOREIGN KEY(seller_id) REFERENCES gold.olist_dim_sellers(seller_id);
+ALTER TABLE gold.olist_order_items
+    ADD CONSTRAINT fk_items_sellers
+    FOREIGN KEY(seller_id)
+    REFERENCES gold.olist_dim_sellers(seller_id);
