@@ -36,25 +36,3 @@ ecommerce-data-warehouse/
 └── README.md
 ```
 
-🛒 Datasets Used
-1️⃣ MavenToy Dataset
-Toy Store E-Commerce dataset including:
-Sessions
-Pageviews
-Order
-Order Items
-Products
-Refunds
-
-Used to design and implement a full warehouse architecture.
-
-2️⃣ Olist Dataset
-Brazilian marketplace dataset including:
-Customers
-Orders
-Sellers
-Payments
-Reviews
-
-Used as a second business case to validate reusability of the warehouse design.
-
