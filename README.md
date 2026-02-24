@@ -46,20 +46,20 @@ ecommerce-data-warehouse/
 │   ├── 1_create_database.sql        # Create the database and schemas: bronze, silver, gold
 │   │
 │   ├── bronze/                       # Bronze layer scripts
-│   │   ├── 01_maventoy_bronze_ddl.sql
-│   │   ├── 02_maventoy_bronze_load.sql
-│   │   ├── 03_olist_bronze_ddl.sql
-│   │   └── 04_olist_bronze_load.sql
+│   │   ├── 101_maventoy_bronze_ddl.sql
+│   │   ├── 102_maventoy_bronze_load.sql
+│   │   ├── 201_olist_bronze_ddl.sql
+│   │   └── 202_olist_bronze_load.sql
 │   │
 │   ├── silver/                       # Silver layer scripts
-│   │   ├── 01_maventoy_silver_ddl.sql
-│   │   ├── 02_maventoy_transform.sql
-│   │   ├── 03_olist_silver_ddl.sql
-│   │   └── 04_olist_transform.sql
+│   │   ├── 103_maventoy_silver_ddl.sql
+│   │   ├── 104_maventoy_transform.sql
+│   │   ├── 203_olist_silver_ddl.sql
+│   │   └── 204_olist_transform.sql
 │   │
 │   ├── gold/                         # Gold layer scripts
-│   │   ├── 01_maventoy_views.sql
-│   │   └── 02_olist_views.sql
+│   │   ├── 105_maventoy_views.sql
+│   │   └── 205_olist_views.sql
 │   │
 │   ├── indexing/                     # Index creation scripts
 │   │   └── create_indexes.sql
