@@ -46,23 +46,20 @@ ecommerce-data-warehouse/
 │   ├── 1_create_database.sql        # Create the database and schemas: bronze, silver, gold
 │   │
 │   ├── bronze/                       # Bronze layer scripts
-│   │   ├── 101_maventoy_bronze_ddl.sql
-│   │   ├── 102_maventoy_bronze_load.sql
+│   │   ├── 101_maven_bronze_ddl.sql
+│   │   ├── 102_maven_bronze_load.sql
 │   │   ├── 201_olist_bronze_ddl.sql
 │   │   └── 202_olist_bronze_load.sql
 │   │
 │   ├── silver/                       # Silver layer scripts
-│   │   ├── 103_maventoy_silver_ddl.sql
-│   │   ├── 104_maventoy_transform.sql
+│   │   ├── 103_maven_silver_ddl.sql
+│   │   ├── 104_maven_transform.sql
 │   │   ├── 203_olist_silver_ddl.sql
 │   │   └── 204_olist_transform.sql
 │   │
 │   ├── gold/                         # Gold layer scripts
-│   │   ├── 105_maventoy_views.sql
-│   │   └── 205_olist_views.sql
-│   │
-│   ├── indexing/                     # Index creation scripts
-│   │   └── create_indexes.sql
+│   │   ├── 105_maven_views.sql
+│   │   └── 205_olist_tables.sql
 │   │
 │   └── tests/                        # Data quality/validation checks
 │       └── data_quality_checks.sql
