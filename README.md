@@ -20,6 +20,9 @@ Better performance optimization
 ```
 ecommerce-data-warehouse/
 │
+├── config/                         # Configuration files
+│   └── 1_paths.sql                  # Dataset paths, update once for local environment
+│
 ├── datasets/                        # All CSV dataset files
 │   ├── maventoy/                    # MavenToy dataset
 │   │   ├── order_item_refunds.csv
@@ -40,8 +43,7 @@ ecommerce-data-warehouse/
 │       └── product_category_name_translation.csv
 │
 ├── sql/                              # All SQL scripts
-│   ├── 01_create_database.sql        # Create the database
-│   ├── 02_create_schemas.sql         # Create schemas: bronze, silver, gold
+│   ├── 1_create_database.sql        # Create the database and schemas: bronze, silver, gold
 │   │
 │   ├── bronze/                       # Bronze layer scripts
 │   │   ├── 01_maventoy_bronze_ddl.sql
@@ -74,4 +76,3 @@ ecommerce-data-warehouse/
 │
 └── README.md                         # Main project README
 ```
-ذذذ
