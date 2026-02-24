@@ -20,19 +20,58 @@ Better performance optimization
 ```
 ecommerce-data-warehouse/
 │
-├── datasets/
-│   ├── maventoy/
-│   └── olist/
+├── datasets/                        # All CSV dataset files
+│   ├── maventoy/                    # MavenToy dataset
+│   │   ├── order_item_refunds.csv
+│   │   ├── order_items.csv
+│   │   ├── orders.csv
+│   │   ├── products.csv
+│   │   ├── website_pageviews.csv      # Not included in Git due to size
+│   │   └── website_sessions.csv      # Not included in Git due to size
+│   │
+│   └── olist/                        # Olist dataset
+│       ├── olist_customers_dataset.csv
+│       ├── olist_order_items_dataset.csv
+│       ├── olist_order_payments_dataset.csv
+│       ├── olist_order_reviews_dataset.csv
+│       ├── olist_orders_dataset.csv
+│       ├── olist_products_dataset.csv
+│       ├── olist_sellers_dataset.csv
+│       └── product_category_name_translation.csv
 │
-├── sql/
-│   ├── 01.ddl_database.sql
-│   ├── bronze/
-│   ├── silver/
-│   ├── gold/
-│   ├── indexing/
-│   └── tests/
+├── sql/                              # All SQL scripts
+│   ├── 01_create_database.sql        # Create the database
+│   ├── 02_create_schemas.sql         # Create schemas: bronze, silver, gold
+│   │
+│   ├── bronze/                       # Bronze layer scripts
+│   │   ├── 01_maventoy_bronze_ddl.sql
+│   │   ├── 02_maventoy_bronze_load.sql
+│   │   ├── 03_olist_bronze_ddl.sql
+│   │   └── 04_olist_bronze_load.sql
+│   │
+│   ├── silver/                       # Silver layer scripts
+│   │   ├── 01_maventoy_silver_ddl.sql
+│   │   ├── 02_maventoy_transform.sql
+│   │   ├── 03_olist_silver_ddl.sql
+│   │   └── 04_olist_transform.sql
+│   │
+│   ├── gold/                         # Gold layer scripts
+│   │   ├── 01_maventoy_views.sql
+│   │   └── 02_olist_views.sql
+│   │
+│   ├── indexing/                     # Index creation scripts
+│   │   └── create_indexes.sql
+│   │
+│   └── tests/                        # Data quality/validation checks
+│       └── data_quality_checks.sql
 │
-├── erd/
-└── README.md
+├── erd/                              # ER diagrams
+│   └── erd_ddl_silver.png
+│
+├── notebooks/                        # Jupyter notebooks for analysis
+│   ├── maven_notebook.ipynb
+│   └── olist_notebook.ipynb
+│
+└── README.md                         # Main project README
 ```
-
+ذذذ
