@@ -17,20 +17,6 @@ CREATE TABLE bronze.olist_customers (
   customer_state TEXT
 );
 GO
-
---- Geolocation Table
-IF OBJECT_ID('bronze.olist_geolocation', 'U') IS NOT NULL
-    DROP TABLE bronze.olist_geolocation;
-GO
-
-CREATE TABLE bronze.olist_geolocation (
-  geolocation_zip_code_prefix INTEGER,
-  geolocation_lat NUMERIC,
-  geolocation_lng NUMERIC,
-  geolocation_city TEXT,
-  geolocation_state TEXT
-);
-GO
   
 --- Sellers Table
 IF OBJECT_ID('bronze.olist_sellers', 'U') IS NOT NULL
