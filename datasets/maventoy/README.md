@@ -1,4 +1,4 @@
-## Datasets Structure
+## Dataset Structure
 
 ```text
 maventoy/
