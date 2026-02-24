@@ -127,47 +127,53 @@ FROM bronze.maven_sessions;
 -- Adding Primary Keys
 -----------------------------
 ALTER TABLE silver.maven_items
-ADD CONSTRAINT pk_items PRIMARY KEY (order_item_id);
+	ADD CONSTRAINT pk_items
+	PRIMARY KEY (order_item_id);
 
 ALTER TABLE silver.maven_orders
-ADD CONSTRAINT pk_orders PRIMARY KEY (order_id);
+	ADD CONSTRAINT pk_orders
+	PRIMARY KEY (order_id);
 
 ALTER TABLE silver.maven_pageviews
-ADD CONSTRAINT pk_pageviews PRIMARY KEY (website_pageview_id);
+	ADD CONSTRAINT pk_pageviews
+	PRIMARY KEY (website_pageview_id);
 
 ALTER TABLE silver.maven_products
-ADD CONSTRAINT pk_products PRIMARY KEY (product_id);
+	ADD CONSTRAINT pk_products
+	PRIMARY KEY (product_id);
 
 ALTER TABLE silver.maven_refunds
-ADD CONSTRAINT pk_refunds PRIMARY KEY (order_item_refund_id);
+	ADD CONSTRAINT pk_refunds
+	PRIMARY KEY (order_item_refund_id);
 
 ALTER TABLE silver.maven_sessions
-ADD CONSTRAINT pk_sessions PRIMARY KEY (website_session_id);
+	ADD CONSTRAINT pk_sessions 
+	PRIMARY KEY (website_session_id);
 
 -----------------------------
 -- Adding Foreign Keys
 -----------------------------
 ALTER TABLE silver.maven_items
-ADD CONSTRAINT fk_items_orders
-FOREIGN KEY (order_id)
-REFERENCES silver.maven_orders (order_id);
+	ADD CONSTRAINT fk_items_orders
+	FOREIGN KEY (order_id)
+	REFERENCES silver.maven_orders (order_id);
 
 ALTER TABLE silver.maven_items
-ADD CONSTRAINT fk_items_products
-FOREIGN KEY (product_id)
-REFERENCES silver.maven_products (product_id);
+	ADD CONSTRAINT fk_items_products
+	FOREIGN KEY (product_id)
+	REFERENCES silver.maven_products (product_id);
 
 ALTER TABLE silver.maven_orders
-ADD CONSTRAINT fk_orders_sessions
-FOREIGN KEY (website_session_id)
-REFERENCES silver.maven_sessions (website_session_id);
+	ADD CONSTRAINT fk_orders_sessions
+	FOREIGN KEY (website_session_id)
+	REFERENCES silver.maven_sessions (website_session_id);
 
 ALTER TABLE silver.maven_pageviews
-ADD CONSTRAINT fk_pageviews_sessions
-FOREIGN KEY (website_session_id)
-REFERENCES silver.maven_sessions (website_session_id);
+	ADD CONSTRAINT fk_pageviews_sessions
+	FOREIGN KEY (website_session_id)
+	REFERENCES silver.maven_sessions (website_session_id);
 
 ALTER TABLE silver.maven_refunds
-ADD CONSTRAINT fk_refunds_orders
-FOREIGN KEY (order_item_id)
-REFERENCES silver.maven_items (order_item_id);
+	ADD CONSTRAINT fk_refunds_orders
+	FOREIGN KEY (order_item_id)
+	REFERENCES silver.maven_items (order_item_id);
