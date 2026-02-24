@@ -1,6 +1,9 @@
 -----------------------
 -- Create Maven Bronze Tables
 -----------------------
+USE ecommerceDWH;
+Go
+    
 --- Orders Table
 IF OBJECT_ID('bronze.maven_orders', 'U') IS NOT NULL
     DROP TABLE bronze.maven_orders;
