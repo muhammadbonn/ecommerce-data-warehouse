@@ -25,7 +25,7 @@ ecommerce-data-warehouse/
 │   └── olist/
 │
 ├── sql/
-│   ├── 01_create_database.sql
+│   ├── scripts/1.ddl_database.sql
 │   ├── bronze/
 │   ├── silver/
 │   ├── gold/
