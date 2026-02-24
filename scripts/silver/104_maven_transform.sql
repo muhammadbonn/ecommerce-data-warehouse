@@ -6,6 +6,8 @@ Go
 
 --- Inserting Data Into Pageviews Table
 TRUNCATE TABLE silver.maven_pageviews;
+GO
+	
 INSERT INTO silver.maven_pageviews (
 	website_pageview_id,
 	created_at,
@@ -23,9 +25,12 @@ SELECT
 FROM bronze.maven_pageviews
 WHERE
     TRY_CAST(REPLACE(created_at, '"', '') AS DATETIME2(0)) IS NOT NULL;
+GO
 
 --- Inserting Data Into Items Table
 TRUNCATE TABLE silver.maven_items;
+GO
+	
 INSERT INTO silver.maven_items (
 	order_item_id,
 	created_at,
@@ -44,9 +49,12 @@ SELECT
 	price_usd,
 	cogs_usd
 FROM bronze.maven_items;
+GO
 
 --- Inserting Data Into Orders Table
 TRUNCATE TABLE silver.maven_orders;
+GO
+	
 INSERT INTO silver.maven_orders (
 	order_id,
 	created_at,
@@ -67,9 +75,12 @@ SELECT
 	price_usd,
 	cogs_usd
 FROM bronze.maven_orders;
+GO
 
 --- Inserting Data Into Products Table
 TRUNCATE TABLE silver.maven_products;
+GO
+	
 INSERT INTO silver.maven_products (
 	product_id,
 	created_at,
@@ -80,9 +91,12 @@ SELECT
 	created_at,
 	product_name
 FROM bronze.maven_products;
+GO
 
 --- Inserting Data Into Refunds Table
 TRUNCATE TABLE silver.maven_refunds;
+GO
+	
 INSERT INTO silver.maven_refunds (
 	order_item_refund_id,
 	created_at,
@@ -97,9 +111,12 @@ SELECT
 	order_id,
 	refund_amount_usd
 FROM bronze.maven_refunds;
+GO
 
 --- Inserting Data Into Sessions Table
 TRUNCATE TABLE silver.maven_sessions;
+GO
+	
 INSERT INTO silver.maven_sessions (
 	website_session_id,
 	created_at,
@@ -122,6 +139,7 @@ SELECT
 	device_type,
 	http_referer
 FROM bronze.maven_sessions;
+GO
 
 -----------------------------
 -- Adding Primary Keys
