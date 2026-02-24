@@ -1,11 +1,11 @@
 # E-Commerce Data Warehouse (SQL Server)
 
-📌 Project Overview:
+📌 Project Overview
 * This project demonstrates the design and implementation of a layered Data Warehouse architecture using Microsoft SQL Server.
 The goal is to simulate a real-world data engineering scenario by building a structured and scalable warehouse for multiple e-commerce datasets.
 The project follows a Bronze → Silver → Gold architecture pattern to separate raw ingestion, transformation, and analytical consumption layers
 
-🏗 Architecture:
+🏗 Architecture
 * The warehouse is organized into three schemas:
 bronze → Raw data ingestion layer (no transformations)
 silver → Cleaned and transformed data with enforced constraints
@@ -26,7 +26,6 @@ ecommerce-data-warehouse/
 │
 ├── sql/
 │   ├── 01_create_database.sql
-│   │
 │   ├── bronze/
 │   ├── silver/
 │   ├── gold/
@@ -34,4 +33,28 @@ ecommerce-data-warehouse/
 │   └── tests/
 │
 ├── erd/
-└── README.md```
+└── README.md
+```
+
+🛒 Datasets Used
+1️⃣ MavenToy Dataset
+Toy Store E-Commerce dataset including:
+Sessions
+Pageviews
+Order
+Order Items
+Products
+Refunds
+
+Used to design and implement a full warehouse architecture.
+
+2️⃣ Olist Dataset
+Brazilian marketplace dataset including:
+Customers
+Orders
+Sellers
+Payments
+Reviews
+
+Used as a second business case to validate reusability of the warehouse design.
+
