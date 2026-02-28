@@ -13,14 +13,13 @@ The project follows the medallion architecture to separate raw ingestion, transf
 
   - gold → Business-ready analytical views and metrics
 
+This layered approach ensures:
 
-* This layered approach ensures:
+  - Clear separation of concerns
 
-  Clear separation of concerns
+  - Reproducible transformations
 
-  Reproducible transformations
-
-  Improved data quality
+  - Improved data quality
 
   Better performance optimization
 
