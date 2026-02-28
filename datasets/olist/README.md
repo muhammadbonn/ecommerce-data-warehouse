@@ -19,7 +19,7 @@
 ```
 
 ---
-CSV File Descriptions
+## CSV Files Descriptions
 1. olist_customers_dataset.csv
 
 Contains information about customers and their locations. Used to analyze customer distribution and geo-segmentation.
@@ -34,21 +34,7 @@ Contains information about customers and their locations. Used to analyze custom
 
     customer_state: State abbreviation.
 
-2. olist_orders_dataset.csv
-
-The core table containing the main lifecycle of every order.
-
-    order_id: Unique identifier of the order.
-
-    customer_id: Foreign key to customers table.
-
-    order_status: Status of the order (delivered, canceled, etc.).
-
-    order_purchase_timestamp: Timestamp of the purchase.
-
-    order_delivered_customer_date: Actual delivery date to the customer.
-
-3. olist_order_items_dataset.csv
+2. olist_order_items_dataset.csv
 
 Contains data about the items purchased within each order.
 
@@ -66,7 +52,7 @@ Contains data about the items purchased within each order.
 
     freight_value: Item freight value (shipping cost).
 
-4. olist_order_payments_dataset.csv
+3. olist_order_payments_dataset.csv
 
 Contains details about payment methods and installments.
 
@@ -79,8 +65,36 @@ Contains details about payment methods and installments.
     payment_installments: Number of installments chosen by the customer.
 
     payment_value: Total amount paid.
+    
+4. olist_order_reviews_dataset.csv
 
-5. olist_products_dataset.csv
+Contains data from customer satisfaction surveys.
+
+    review_id: Unique review identifier.
+
+    order_id: Unique order identifier.
+
+    review_score: Satisfaction score from 1 to 5.
+
+    review_comment_title: Title of the review comment.
+
+    review_comment_message: Review comment message.
+
+5. olist_orders_dataset.csv
+
+The core table containing the main lifecycle of every order.
+
+    order_id: Unique identifier of the order.
+
+    customer_id: Foreign key to customers table.
+
+    order_status: Status of the order (delivered, canceled, etc.).
+
+    order_purchase_timestamp: Timestamp of the purchase.
+
+    order_delivered_customer_date: Actual delivery date to the customer.
+
+6. olist_products_dataset.csv
 
 Detailed information about products sold by Olist.
 
@@ -96,7 +110,7 @@ Detailed information about products sold by Olist.
 
     product_weight_g: Product weight measured in grams.
 
-6. olist_sellers_dataset.csv
+7. olist_sellers_dataset.csv
 
 Contains information about the sellers who fulfilled orders on Olist.
 
@@ -107,20 +121,6 @@ Contains information about the sellers who fulfilled orders on Olist.
     seller_city: Seller city name.
 
     seller_state: Seller state.
-
-7. olist_order_reviews_dataset.csv
-
-Contains data from customer satisfaction surveys.
-
-    review_id: Unique review identifier.
-
-    order_id: Unique order identifier.
-
-    review_score: Satisfaction score from 1 to 5.
-
-    review_comment_title: Title of the review comment.
-
-    review_comment_message: Review comment message.
 
 8. product_category_name_translation.csv
 
