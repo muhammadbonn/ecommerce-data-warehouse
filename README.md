@@ -75,7 +75,7 @@ For more detailed information about each layer of the data warehouse and dataset
 * **Datasets Info**: [View Dataset Descriptions](./datasets/README.md)
 * **Bronze Layer**: [View Bronze Scripts Docs](./scripts/bronze/README.md)
 * **Silver Layer**: [View Transformation Logic](./scripts/silver/README.md)
-* **Gold Layer**: [View Transformation Logic](./scripts/gold/README.md)
+* **Gold Layer**: [View Logic](./scripts/gold/README.md)
  
 ### Project Structure
 ```
