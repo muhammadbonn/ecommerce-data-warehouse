@@ -33,11 +33,11 @@ This project automates the ETL process (Bronze → Silver → Gold) using SQL sc
 
 * Before running the scripts, ensure you have the following installed:
 
-1. **SQL Server & SSMS**: SQL Server 2017 or later (Express, Developer, or Enterprise edition).
+1. **SQL Server & SSMS:** SQL Server 2017 or later (Express, Developer, or Enterprise edition).
    
-2. **SQLCMD Utility**: Usually installed with SQL Server, but you can verify by running sqlcmd -? in your terminal.
+2. **SQLCMD Utility:** Usually installed with SQL Server, but you can verify by running sqlcmd -? in your terminal.
    
-3. **Dataset**: Ensure the raw CSV files are placed in the directory specified in your script variables (e.g., C:\Users\muham\ecommerce-data-warehouse\datasets).
+3. **Dataset:** Ensure the raw CSV files are placed in the directory specified in your script variables (e.g., C:\Users\muham\ecommerce-data-warehouse\datasets).
    
 ---
 ## Setup & Execution Steps
@@ -72,10 +72,16 @@ Command Breakdown:
 
 For more detailed information about each layer of the data warehouse and datasets, please refer to the following:
 
-* **Datasets Info**: [View Dataset Descriptions](./datasets/README.md)
-* **Bronze Layer**: [View Bronze Scripts Docs](./scripts/bronze/README.md)
-* **Silver Layer**: [View Transformation Logic](./scripts/silver/README.md)
-* **Gold Layer**: [View Logic](./scripts/gold/README.md)
+**MavenToy Dataset**
+
+* **Datasets Info:** [View Dataset Descriptions](./datasets/olist/README.md)
+
+**Olist Dataset**
+
+* **Datasets Info:** [View Dataset Descriptions](./datasets/olist/README.md)
+* **Bronze Layer:** [View Bronze Scripts Docs](./scripts/bronze/README.md)
+* **Silver Layer:** [View Transformation Logic](./scripts/silver/README.md)
+* **Gold Layer:** [View Logic](./scripts/gold/README.md)
  
 ### Project Structure
 ```
