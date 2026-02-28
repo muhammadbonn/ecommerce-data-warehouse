@@ -5,6 +5,7 @@
 
 ---
 🏗 Architecture
+
 The project follows the medallion architecture to separate raw ingestion, transformation, and analytical consumption layers. The warehouse is organized into three schemas:
 
   - bronze → Raw data ingestion layer (no transformations)
@@ -25,6 +26,7 @@ This layered approach ensures:
 
 ---
 🚀🚀 How to Run the Project
+
 This project automates the ETL process (Bronze → Silver → Gold) using SQL scripts managed by a master execution file.
 
 📋 Prerequisites
@@ -39,6 +41,7 @@ This project automates the ETL process (Bronze → Silver → Gold) using SQL sc
    
 ---
 🛠️ Setup & Execution Steps
+
 Follow these steps to build the data warehouse from scratch:
 1. Clone the Repository
 
