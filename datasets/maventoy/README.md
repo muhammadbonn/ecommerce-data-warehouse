@@ -1,16 +1,18 @@
+# Data Source 
+
+**Toy Store E-Commerce Dataset (Maven Analytics)**  
+https://mavenanalytics.io/data-playground/toy-store-e-commerce-database
+
 ## Dataset Structure
-
-```text
-maventoy/
-├── sessions.csv
-├── pageviews.csv
-├── orders.csv
-├── order_items.csv
-├── products.csv
-├── refunds.csv
-├── README.md
 ```
-
+├── maventoy/                    # MavenToy dataset
+|   ├── order_item_refunds.csv
+│   ├── order_items.csv
+│   ├── orders.csv
+│   ├── products.csv
+│   ├── website_pageviews.csv      # Not included in Git due to size
+│   └── website_sessions.csv      # Not included in Git due to size
+```
 ---
 
 ## CSV Files Description
