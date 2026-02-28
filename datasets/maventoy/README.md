@@ -1,21 +1,22 @@
-# Data Source 
+## Data Source
+- **Dataset:** [Toy Store E-Commerce Database](https://mavenanalytics.io/data-playground/toy-store-e-commerce-database)  
+- **Provider:** Maven Analytics 
+- **Description:** E-Commerce database for Maven Fuzzy Factory, an online retailer that sells teddy bears. 
 
-**Toy Store E-Commerce Dataset (Maven Analytics)**  
-https://mavenanalytics.io/data-playground/toy-store-e-commerce-database
-
-## Dataset Structure
+---
+### Dataset Structure
 ```
-├── maventoy/                    # MavenToy dataset
+├── maventoy/                      # MavenToy dataset
 |   ├── order_item_refunds.csv
 │   ├── order_items.csv
 │   ├── orders.csv
 │   ├── products.csv
 │   ├── website_pageviews.csv      # Not included in Git due to size
-│   └── website_sessions.csv      # Not included in Git due to size
+│   └── website_sessions.csv       # Not included in Git due to size
 ```
----
 
-## CSV Files Description
+---
+### CSV Files Description
 
 The original dataset consists of the following CSV files:
 
@@ -38,8 +39,7 @@ The original dataset consists of the following CSV files:
   Refund transactions linked to specific order items and orders.
 
 ---
-
-## Note on Data Availability
+### Note on Data Availability
 
 Due to GitHub file size limitations, **some or all CSV files are not included in this repository**.
 
@@ -49,5 +49,4 @@ The full dataset can be downloaded directly from Maven Analytics using the link 
 https://mavenanalytics.io/data-playground/toy-store-e-commerce-database
 
 After downloading, place the CSV files in this folder following the expected structure before running the SQL scripts or Jupyter notebooks.
-
 ---
