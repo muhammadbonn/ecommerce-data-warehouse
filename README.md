@@ -3,7 +3,7 @@
 📌 Project Overview
 * This project demonstrates the design and implementation of a layered Data Warehouse architecture using Microsoft SQL Server. The goal is to simulate a real-world data engineering scenario by building a structured and scalable warehouse for multiple e-commerce datasets.
 
-
+---
 🏗 Architecture
 The project follows the medallion architecture to separate raw ingestion, transformation, and analytical consumption layers. The warehouse is organized into three schemas:
 
@@ -20,11 +20,10 @@ This layered approach ensures:
   - Reproducible transformations
 
   - Improved data quality
+  
+  - Better performance optimization
 
-  Better performance optimization
-
-
-
+---
 🚀🚀 How to Run the Project
 This project automates the ETL process (Bronze → Silver → Gold) using SQL scripts managed by a master execution file.
 
@@ -38,11 +37,14 @@ This project automates the ETL process (Bronze → Silver → Gold) using SQL sc
    
 3. Dataset: Ensure the raw CSV files are placed in the directory specified in your script variables (e.g., C:\Users\muham\ecommerce-data-warehouse\datasets).
    
-
+---
 🛠️ Setup & Execution Steps
 Follow these steps to build the data warehouse from scratch:
 1. Clone the Repository
-2. PowerShell
+
+   ```git clone https://github.com/muhammadbonn/ecommerce-data-warehouse.git```
+   
+3. PowerShell
    
    ```cd C:\Users\muham\ecommerce-data-warehouse```
    
@@ -58,7 +60,7 @@ Command Breakdown:
 
 ```-i: Specifies the Input file to execute.```
 
-
+---
 🗂 Project Structure
 ```
 ecommerce-data-warehouse/
