@@ -74,13 +74,13 @@ For more detailed information about each layer of the data warehouse and dataset
 
 **MavenToy Dataset:**
 
-* **Dataset Info:** [View Dataset Descriptions](./datasets/maven/README.md)
-* **Scripts Description:** [View Bronze Scripts Docs](./scripts/maven_readme.md)
+* **Dataset Description:** [View Dataset Description](./datasets/maven/README.md)
+* **Scripts Description:** [View Scripts Description](./scripts/maven_readme.md)
   
 **Olist Dataset:**
 
-* **Dataset Info:** [View Dataset Descriptions](./datasets/olist/README.md)
-* **Scripts Description:** [View Bronze Scripts Docs](./scripts/olist_readme.md)
+* **Dataset Description:** [View Dataset Description](./datasets/olist/README.md)
+* **Scripts Description:** [View Scripts Description](./scripts/olist_readme.md)
  
 ### Project Structure
 ```
