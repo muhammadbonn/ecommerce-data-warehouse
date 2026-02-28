@@ -2,31 +2,33 @@
 
 📌 Project Overview
 * This project demonstrates the design and implementation of a layered Data Warehouse architecture using Microsoft SQL Server.
+
 The goal is to simulate a real-world data engineering scenario by building a structured and scalable warehouse for multiple e-commerce datasets.
 
+🏗 Architecture
 The project follows a Bronze → Silver → Gold architecture pattern to separate raw ingestion, transformation, and analytical consumption layers
 
-🏗 Architecture
 * The warehouse is organized into three schemas:
 bronze → Raw data ingestion layer (no transformations)
 silver → Cleaned and transformed data with enforced constraints
 gold → Business-ready analytical views and metrics
+
 * This layered approach ensures:
 Clear separation of concerns
 Reproducible transformations
 Improved data quality
 Better performance optimization
 
-🚀 How to Run the Project
+🚀🚀 How to Run the Project
 This project automates the ETL process (Bronze → Silver → Gold) using SQL scripts managed by a master execution file.
 📋 Prerequisites
-Before running the scripts, ensure you have the following installed:
+* Before running the scripts, ensure you have the following installed:
 
-    ```SQL Server & SSMS: SQL Server 2017 or later (Express, Developer, or Enterprise edition).```
-    
-    ```SQLCMD Utility: Usually installed with SQL Server, but you can verify by running sqlcmd -? in your terminal.```
-    
-    ```Dataset: Ensure the raw CSV files are placed in the directory specified in your script variables (e.g., C:\Users\muham\ecommerce-data-warehouse\datasets).```
+1. SQL Server & SSMS: SQL Server 2017 or later (Express, Developer, or Enterprise edition).
+   
+2. SQLCMD Utility: Usually installed with SQL Server, but you can verify by running sqlcmd -? in your terminal.
+   
+3. Dataset: Ensure the raw CSV files are placed in the directory specified in your script variables (e.g., C:\Users\muham\ecommerce-data-warehouse\datasets).
 
 🛠️ Setup & Execution Steps
 Follow these steps to build the data warehouse from scratch:
@@ -35,13 +37,13 @@ Follow these steps to build the data warehouse from scratch:
    
    ```cd C:\Users\muham\ecommerce-data-warehouse```
    
-   ``` sqlcmd -S localhost\SQLEXPRESS -E -i run_olist.sql ```
+   ```sqlcmd -S localhost\SQLEXPRESS -E -i run_olist.sql ```
 
    Note: Replace localhost\SQLEXPRESS with your actual SQL Server instance name if it differs.
 
 Command Breakdown:
 
-``` -S: Specifies the Server instance.```
+```-S: Specifies the Server instance.```
 
 ```-E: Uses a Trusted Connection (Windows Authentication).```
 
