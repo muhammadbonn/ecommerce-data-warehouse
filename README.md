@@ -9,19 +9,30 @@ The goal is to simulate a real-world data engineering scenario by building a str
 The project follows a Bronze → Silver → Gold architecture pattern to separate raw ingestion, transformation, and analytical consumption layers
 
 * The warehouse is organized into three schemas:
+  
 bronze → Raw data ingestion layer (no transformations)
+
 silver → Cleaned and transformed data with enforced constraints
+
 gold → Business-ready analytical views and metrics
 
+
 * This layered approach ensures:
+  
 Clear separation of concerns
+
 Reproducible transformations
+
 Improved data quality
+
 Better performance optimization
+
 
 🚀🚀 How to Run the Project
 This project automates the ETL process (Bronze → Silver → Gold) using SQL scripts managed by a master execution file.
+
 📋 Prerequisites
+
 * Before running the scripts, ensure you have the following installed:
 
 1. SQL Server & SSMS: SQL Server 2017 or later (Express, Developer, or Enterprise edition).
