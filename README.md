@@ -37,12 +37,15 @@ Follow these steps to build the data warehouse from scratch:
    
    ``` sqlcmd -S localhost\SQLEXPRESS -E -i run_olist.sql ```
 
-   ``` Note: Replace localhost\SQLEXPRESS with your actual SQL Server instance name if it differs. ```
+   Note: Replace localhost\SQLEXPRESS with your actual SQL Server instance name if it differs.
 
-Command Breakdown:```
-    -S: Specifies the Server instance.
-    -E: Uses a Trusted Connection (Windows Authentication).
-    -i: Specifies the Input file to execute.```
+Command Breakdown:
+
+``` -S: Specifies the Server instance.```
+
+```-E: Uses a Trusted Connection (Windows Authentication).```
+
+```-i: Specifies the Input file to execute.```
 
 
 🗂 Project Structure
