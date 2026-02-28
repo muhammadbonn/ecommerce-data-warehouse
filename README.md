@@ -51,6 +51,10 @@ Follow these steps to build the data warehouse from scratch:
    
    ```cd C:\Users\muham\ecommerce-data-warehouse```
    
+   ```sqlcmd -S localhost\SQLEXPRESS -E -i run_maven.sql ```
+
+   or
+
    ```sqlcmd -S localhost\SQLEXPRESS -E -i run_olist.sql ```
 
    Note: Replace localhost\SQLEXPRESS with your actual SQL Server instance name if it differs.
@@ -110,8 +114,8 @@ ecommerce-data-warehouse/
 │   ├── maven_notebook.ipynb
 │   └── olist_notebook.ipynb
 │
-├── run_maven.sql                     # Run MavenToy project
-├── run_olist.sql                     # Run Olist project
+├── run_maven.sql                     # MavenToy execution file
+├── run_olist.sql                     # Olist execution file
 └── README.md                         # Main project README
 ```
 
