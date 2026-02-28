@@ -68,8 +68,5 @@ ecommerce-data-warehouse/
 └── README.md                         # Main project README
 ```
 
-## Olist Gold Tables Notes
-Future Work – PKs, FKs, and column adjustments need careful review before final implementation.
-Keys – No Primary or Foreign Keys added yet; table relationships are not enforced.
-Duplicates – Some tables (e.g., olist_orders) have duplicate rows; PK addition removed duplicates (350 rows left).
-Columns – ~108 columns were modified or shifted; some were made NOT NULL for future PKs.
+* Olist Gold Tables Notes
+Future Work: PKs, FKs, and column adjustments need careful review before final implementation.
