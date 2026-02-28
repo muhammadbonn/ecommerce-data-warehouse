@@ -1,5 +1,5 @@
 ## Maven Toy Store: Detailed Scripts Description
----
+
 This pipeline manages the data for the Maven Toy Store, focusing on website performance, sales funnels, and product profitability. It follows the Medallion Architecture to transform raw website logs and sales data into high-level analytical views.
 1. Bronze Layer (Raw Ingestion)
 
