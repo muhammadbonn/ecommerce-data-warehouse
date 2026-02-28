@@ -5,6 +5,7 @@
 
 The goal is to simulate a real-world data engineering scenario by building a structured and scalable warehouse for multiple e-commerce datasets.
 
+
 🏗 Architecture
 The project follows a Bronze → Silver → Gold architecture pattern to separate raw ingestion, transformation, and analytical consumption layers
 
@@ -28,6 +29,7 @@ Improved data quality
 Better performance optimization
 
 
+
 🚀🚀 How to Run the Project
 This project automates the ETL process (Bronze → Silver → Gold) using SQL scripts managed by a master execution file.
 
@@ -40,6 +42,7 @@ This project automates the ETL process (Bronze → Silver → Gold) using SQL sc
 2. SQLCMD Utility: Usually installed with SQL Server, but you can verify by running sqlcmd -? in your terminal.
    
 3. Dataset: Ensure the raw CSV files are placed in the directory specified in your script variables (e.g., C:\Users\muham\ecommerce-data-warehouse\datasets).
+   
 
 🛠️ Setup & Execution Steps
 Follow these steps to build the data warehouse from scratch:
