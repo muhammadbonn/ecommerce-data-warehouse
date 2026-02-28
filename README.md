@@ -87,27 +87,13 @@ For more detailed information about each layer of the data warehouse and dataset
 ```
 ecommerce-data-warehouse/
 │
-├── datasets/                        # All CSV dataset files
-│   ├── maventoy/                    # MavenToy dataset
-│   │   ├── order_item_refunds.csv
-│   │   ├── order_items.csv
-│   │   ├── orders.csv
-│   │   ├── products.csv
-│   │   ├── website_pageviews.csv      # Not included in Git due to size
-│   │   └── website_sessions.csv      # Not included in Git due to size
+├── datasets/                         # All CSV dataset files
+│   ├── maventoy/                     # MavenToy dataset
 │   │
 │   └── olist/                        # Olist dataset
-│       ├── olist_customers_dataset.csv
-│       ├── olist_order_items_dataset.csv
-│       ├── olist_order_payments_dataset.csv
-│       ├── olist_order_reviews_dataset.csv
-│       ├── olist_orders_dataset.csv
-│       ├── olist_products_dataset.csv
-│       ├── olist_sellers_dataset.csv
-│       └── product_category_name_translation.csv
 │
 ├── sql/                              # All SQL scripts
-│   ├── 1_create_database.sql        # Create the database and schemas: bronze, silver, gold
+│   ├── 1_create_database.sql         # Create the database and schemas: bronze, silver, gold
 │   │
 │   ├── bronze/                       # Bronze layer scripts
 │   │   ├── 101_maven_bronze_ddl.sql
