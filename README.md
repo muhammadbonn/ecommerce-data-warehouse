@@ -109,7 +109,10 @@ ecommerce-data-warehouse/
 │   ├── gold/                         # Gold layer scripts
 │   │   ├── 105_maven_views.sql
 │   │   └── 205_olist_tables.sql
-│
+|   |
+|   ├── maven_readme.md               # Maven Data Warehouse Scripts Description
+|   └── olist_readme.md               # Olist Data Warehouse Scripts Description
+|
 ├── notebooks/                        # Jupyter notebooks for analysis
 │   ├── maven_notebook.ipynb
 │   └── olist_notebook.ipynb
