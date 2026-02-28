@@ -72,16 +72,15 @@ Command Breakdown:
 
 For more detailed information about each layer of the data warehouse and datasets, please refer to the following:
 
-**MavenToy Dataset**
+**MavenToy Dataset:**
 
-* **Datasets Info:** [View Dataset Descriptions](./datasets/olist/README.md)
+* **Dataset Info:** [View Dataset Descriptions](./datasets/maven/README.md)
+* **Scripts Description:** [View Bronze Scripts Docs](./scripts/maven_readme.md)
+  
+**Olist Dataset:**
 
-**Olist Dataset**
-
-* **Datasets Info:** [View Dataset Descriptions](./datasets/olist/README.md)
-* **Bronze Layer:** [View Bronze Scripts Docs](./scripts/bronze/README.md)
-* **Silver Layer:** [View Transformation Logic](./scripts/silver/README.md)
-* **Gold Layer:** [View Logic](./scripts/gold/README.md)
+* **Dataset Info:** [View Dataset Descriptions](./datasets/olist/README.md)
+* **Scripts Description:** [View Bronze Scripts Docs](./scripts/olist_readme.md)
  
 ### Project Structure
 ```
