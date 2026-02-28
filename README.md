@@ -68,5 +68,4 @@ ecommerce-data-warehouse/
 └── README.md                         # Main project README
 ```
 
-* Olist Gold Tables Notes
-** Future Work: PKs, FKs, and column adjustments need careful review before final implementation.
+* Olist Gold Tables Notes (Future Work): PKs, FKs, and column adjustments need careful review before final implementation.
