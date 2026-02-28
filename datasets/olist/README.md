@@ -19,7 +19,7 @@
 ```
 
 ---
-## CSV Files Descriptions
+## CSV File Descriptions
 1. olist_customers_dataset.csv
 
 Contains information about customers and their locations. Used to analyze customer distribution and geo-segmentation.
