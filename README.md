@@ -69,4 +69,4 @@ ecommerce-data-warehouse/
 ```
 
 * Olist Gold Tables Notes
-Future Work: PKs, FKs, and column adjustments need careful review before final implementation.
+  Future Work: PKs, FKs, and column adjustments need careful review before final implementation.
