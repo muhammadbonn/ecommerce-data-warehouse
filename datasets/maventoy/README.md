@@ -49,4 +49,3 @@ The full dataset can be downloaded directly from Maven Analytics using the link 
 https://mavenanalytics.io/data-playground/toy-store-e-commerce-database
 
 After downloading, place the CSV files in this folder following the expected structure before running the SQL scripts or Jupyter notebooks.
-
