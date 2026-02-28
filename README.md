@@ -7,11 +7,11 @@
 🏗 Architecture
 The project follows the medallion architecture to separate raw ingestion, transformation, and analytical consumption layers. The warehouse is organized into three schemas:
 
-  bronze → Raw data ingestion layer (no transformations)
+  - bronze → Raw data ingestion layer (no transformations)
 
-  silver → Cleaned and transformed data with enforced constraints
+  - silver → Cleaned and transformed data with enforced constraints
 
-  gold → Business-ready analytical views and metrics
+  - gold → Business-ready analytical views and metrics
 
 
 * This layered approach ensures:
