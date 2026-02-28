@@ -20,9 +20,6 @@ Better performance optimization
 ```
 ecommerce-data-warehouse/
 │
-├── config/                         # Configuration files
-│   └── 1_paths.sql                  # Dataset paths, update once for local environment
-│
 ├── datasets/                        # All CSV dataset files
 │   ├── maventoy/                    # MavenToy dataset
 │   │   ├── order_item_refunds.csv
@@ -60,16 +57,12 @@ ecommerce-data-warehouse/
 │   ├── gold/                         # Gold layer scripts
 │   │   ├── 105_maven_views.sql
 │   │   └── 205_olist_tables.sql
-│   │
-│   └── tests/                        # Data quality/validation checks
-│       └── data_quality_checks.sql
-│
-├── erd/                              # ER diagrams
-│   └── erd_ddl_silver.png
 │
 ├── notebooks/                        # Jupyter notebooks for analysis
 │   ├── maven_notebook.ipynb
 │   └── olist_notebook.ipynb
 │
+├── run_maven.sql                     # Run MavenToy project
+├── run_olist.sql                     # Run Olist project
 └── README.md                         # Main project README
 ```
