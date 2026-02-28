@@ -21,15 +21,20 @@ Better performance optimization
 This project automates the ETL process (Bronze → Silver → Gold) using SQL scripts managed by a master execution file.
 📋 Prerequisites
 Before running the scripts, ensure you have the following installed:
+
     ```SQL Server & SSMS: SQL Server 2017 or later (Express, Developer, or Enterprise edition).```
+    
     ```SQLCMD Utility: Usually installed with SQL Server, but you can verify by running sqlcmd -? in your terminal.```
+    
     ```Dataset: Ensure the raw CSV files are placed in the directory specified in your script variables (e.g., C:\Users\muham\ecommerce-data-warehouse\datasets).```
 
 🛠️ Setup & Execution Steps
 Follow these steps to build the data warehouse from scratch:
 1. Clone the Repository
 2. PowerShell
+   
    ```cd C:\Users\muham\ecommerce-data-warehouse```
+   
    ``` sqlcmd -S localhost\SQLEXPRESS -E -i run_olist.sql ```
 
    ``` Note: Replace localhost\SQLEXPRESS with your actual SQL Server instance name if it differs. ```
