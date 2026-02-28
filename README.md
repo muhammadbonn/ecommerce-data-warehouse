@@ -74,7 +74,7 @@ For more detailed information about each layer of the data warehouse and dataset
 
 **MavenToy Dataset:**
 
-* **Dataset Description:** [View Dataset Description](./datasets/maven/README.md)
+* **Dataset Description:** [View Dataset Description](./datasets/maventoy/README.md)
 * **Scripts Description:** [View Scripts Description](./scripts/maven_readme.md)
   
 **Olist Dataset:**
