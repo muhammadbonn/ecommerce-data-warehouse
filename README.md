@@ -76,11 +76,16 @@ For more detailed information about each layer of the data warehouse and dataset
 
 * **Dataset Description:** [View Dataset Description](./datasets/maventoy/README.md)
 * **Scripts Description:** [View Scripts Description](./scripts/maven_readme.md)
+* **ERD:** [View Entity Relationship Diagram](./erds/maven_silver_layer_erd.png)
+* **Analytics Notebook:** [View Notebook](./notebooks/maven_notebook.ipynb)
   
 **Olist Dataset:**
 
 * **Dataset Description:** [View Dataset Description](./datasets/olist/README.md)
 * **Scripts Description:** [View Scripts Description](./scripts/olist_readme.md)
+* **ERD:** [View Entity Relationship Diagram](./erds/olist_gold_layer_erd.png)
+* **Analytics Notebook:** [View Notebook](./notebooks/olist_notebook.ipynb)
+
  
 ### Project Structure
 ```
