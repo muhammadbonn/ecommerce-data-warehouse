@@ -27,3 +27,5 @@ This project implements a complete End-to-End Data Warehouse using the Medallion
         Dimensions: Creates dim_products (with category translations), dim_customers, and dim_sellers.
 
         Fact Table: Builds fact_sales, a comprehensive table that aggregates order-level information, including review scores and total payment values, providing a flat structure for rapid BI reporting.
+
+* Olist Gold Tables Note (Future Work): PKs, FKs, and column adjustments need careful review before final implementation.
