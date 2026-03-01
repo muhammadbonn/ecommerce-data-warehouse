@@ -126,5 +126,3 @@ ecommerce-data-warehouse/
 ├── run_olist.sql                     # Olist execution file
 └── README.md                         # Main project README
 ```
-
-* Olist Gold Tables Notes (Future Work): PKs, FKs, and column adjustments need careful review before final implementation.
